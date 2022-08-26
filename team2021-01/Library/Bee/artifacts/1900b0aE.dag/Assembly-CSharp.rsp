@@ -381,6 +381,7 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/VRM.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/VRMShaders.GLTF.IO.Runtime.ref.dll"
+"Assets/Scripts/SomenMove.cs"
 "Assets/Scripts/ToMenuScene.cs"
 "Assets/UniGLTF/Samples/UniHumanoid/HumanBuilderTest.cs"
 "Assets/UniGLTF/Samples/UniHumanoid/RuntimeBvhLoader.cs"
