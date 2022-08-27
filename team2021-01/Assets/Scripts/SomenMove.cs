@@ -9,15 +9,22 @@ public class SomenMove : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-        rb.AddForce(Vector3.right * 6.0f);
+        //rb.AddForce(Vector3.right * 6.0f);
     }
 
     // Update is called once per frame
     void Update()
     {
-        rb.AddForce(Vector3.right * 0.8f);
+        
+        /*rb.AddForce(Vector3.right * 0.03f);
+        rb.AddForce(Vector3.up * 0.02f);*/
         
         float vel = rb.velocity.magnitude;
+        /*if (vel <= 1.0f)
+        {
+            rb.AddForce(Vector3.right * 0.05f);
+            rb.AddForce(Vector3.up * 0.04f);
+        }*/
         Debug.Log(vel);
     }
 }
