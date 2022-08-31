@@ -42,6 +42,7 @@ GameObject:
   - component: {fileID: 4473501654175642062}
   - component: {fileID: 5235515340500420660}
   - component: {fileID: 6397763272610017587}
+  - component: {fileID: 1218326891028432027}
   m_Layer: 0
   m_Name: noodle1
   m_TagString: Untagged
@@ -96,6 +97,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -7893403224840073670, guid: e053e4812ab5b8b418a32c81387490a3, type: 3}
+--- !u!54 &1218326891028432027
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 261951032473633203}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1510222387556423114
 GameObject:
   m_ObjectHideFlags: 0
