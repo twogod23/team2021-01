@@ -8,7 +8,7 @@ public class SomenGet : MonoBehaviour, IPointerClickHandler
     //対象のオブジェクトを指定
     public GameObject somen;
     //得点を管理するオブジェクトを指定
-    public GameObject score;
+    private GameObject score;
 
     // Start is called before the first frame update
     void Start()

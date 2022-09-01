@@ -384,6 +384,7 @@
 "Assets/Scripts/NoodleMove.cs"
 "Assets/Scripts/Score.cs"
 "Assets/Scripts/SomenDestroy.cs"
+"Assets/Scripts/SomenGenerate.cs"
 "Assets/Scripts/SomenGet.cs"
 "Assets/Scripts/SomenMove.cs"
 "Assets/Scripts/Timer.cs"
