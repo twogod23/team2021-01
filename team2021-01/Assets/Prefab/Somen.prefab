@@ -111,7 +111,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   somen: {fileID: 3201093389010310681}
-  score: {fileID: 0}
 --- !u!114 &5011322910832719317
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -184,6 +183,10 @@ PrefabInstance:
       propertyPath: m_Convex
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7843113676692925598, guid: 804f0683157fd6140930199594552cb6, type: 3}
+      propertyPath: somen
+      value: 
+      objectReference: {fileID: 3201093389010310681}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 804f0683157fd6140930199594552cb6, type: 3}
 --- !u!4 &1331239714239420959 stripped
@@ -250,6 +253,10 @@ PrefabInstance:
       propertyPath: m_Convex
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7843113676692925598, guid: 804f0683157fd6140930199594552cb6, type: 3}
+      propertyPath: somen
+      value: 
+      objectReference: {fileID: 3201093389010310681}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 804f0683157fd6140930199594552cb6, type: 3}
 --- !u!4 &1331239714169924635 stripped
@@ -316,6 +323,10 @@ PrefabInstance:
       propertyPath: m_Convex
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7843113676692925598, guid: 804f0683157fd6140930199594552cb6, type: 3}
+      propertyPath: somen
+      value: 
+      objectReference: {fileID: 3201093389010310681}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 804f0683157fd6140930199594552cb6, type: 3}
 --- !u!4 &1331239714511040209 stripped
@@ -382,6 +393,10 @@ PrefabInstance:
       propertyPath: m_Convex
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7843113676692925598, guid: 804f0683157fd6140930199594552cb6, type: 3}
+      propertyPath: somen
+      value: 
+      objectReference: {fileID: 3201093389010310681}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 804f0683157fd6140930199594552cb6, type: 3}
 --- !u!4 &1331239714509565079 stripped
@@ -448,6 +463,10 @@ PrefabInstance:
       propertyPath: m_Convex
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7843113676692925598, guid: 804f0683157fd6140930199594552cb6, type: 3}
+      propertyPath: somen
+      value: 
+      objectReference: {fileID: 3201093389010310681}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 804f0683157fd6140930199594552cb6, type: 3}
 --- !u!4 &1331239714479497374 stripped
@@ -466,6 +485,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: noodle2 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 6872716246095943262, guid: 841d3a448c7b6ec41bafa3b1e54013c3, type: 3}
+      propertyPath: somen
+      value: 
+      objectReference: {fileID: 3201093389010310681}
     - target: {fileID: 7022728451141910884, guid: 841d3a448c7b6ec41bafa3b1e54013c3, type: 3}
       propertyPath: m_RootOrder
       value: 17
@@ -528,6 +551,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: noodle2 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 6872716246095943262, guid: 841d3a448c7b6ec41bafa3b1e54013c3, type: 3}
+      propertyPath: somen
+      value: 
+      objectReference: {fileID: 3201093389010310681}
     - target: {fileID: 7022728451141910884, guid: 841d3a448c7b6ec41bafa3b1e54013c3, type: 3}
       propertyPath: m_RootOrder
       value: 18
@@ -590,6 +617,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: noodle2
       objectReference: {fileID: 0}
+    - target: {fileID: 6872716246095943262, guid: 841d3a448c7b6ec41bafa3b1e54013c3, type: 3}
+      propertyPath: somen
+      value: 
+      objectReference: {fileID: 3201093389010310681}
     - target: {fileID: 7022728451141910884, guid: 841d3a448c7b6ec41bafa3b1e54013c3, type: 3}
       propertyPath: m_RootOrder
       value: 15
@@ -700,6 +731,10 @@ PrefabInstance:
       propertyPath: m_Convex
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7843113676692925598, guid: 804f0683157fd6140930199594552cb6, type: 3}
+      propertyPath: somen
+      value: 
+      objectReference: {fileID: 3201093389010310681}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 804f0683157fd6140930199594552cb6, type: 3}
 --- !u!4 &1331239715164161614 stripped
@@ -766,6 +801,10 @@ PrefabInstance:
       propertyPath: m_Convex
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7843113676692925598, guid: 804f0683157fd6140930199594552cb6, type: 3}
+      propertyPath: somen
+      value: 
+      objectReference: {fileID: 3201093389010310681}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 804f0683157fd6140930199594552cb6, type: 3}
 --- !u!4 &1331239715172968790 stripped
@@ -832,6 +871,10 @@ PrefabInstance:
       propertyPath: m_Convex
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7843113676692925598, guid: 804f0683157fd6140930199594552cb6, type: 3}
+      propertyPath: somen
+      value: 
+      objectReference: {fileID: 3201093389010310681}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 804f0683157fd6140930199594552cb6, type: 3}
 --- !u!4 &1331239715104875766 stripped
@@ -898,6 +941,10 @@ PrefabInstance:
       propertyPath: m_Convex
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7843113676692925598, guid: 804f0683157fd6140930199594552cb6, type: 3}
+      propertyPath: somen
+      value: 
+      objectReference: {fileID: 3201093389010310681}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 804f0683157fd6140930199594552cb6, type: 3}
 --- !u!4 &1331239715303746721 stripped
@@ -964,6 +1011,10 @@ PrefabInstance:
       propertyPath: m_Convex
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7843113676692925598, guid: 804f0683157fd6140930199594552cb6, type: 3}
+      propertyPath: somen
+      value: 
+      objectReference: {fileID: 3201093389010310681}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 804f0683157fd6140930199594552cb6, type: 3}
 --- !u!4 &1331239715234575284 stripped
@@ -1030,6 +1081,10 @@ PrefabInstance:
       propertyPath: m_Convex
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7843113676692925598, guid: 804f0683157fd6140930199594552cb6, type: 3}
+      propertyPath: somen
+      value: 
+      objectReference: {fileID: 3201093389010310681}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 804f0683157fd6140930199594552cb6, type: 3}
 --- !u!4 &1331239715424285135 stripped
@@ -1048,6 +1103,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: noodle2 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6872716246095943262, guid: 841d3a448c7b6ec41bafa3b1e54013c3, type: 3}
+      propertyPath: somen
+      value: 
+      objectReference: {fileID: 3201093389010310681}
     - target: {fileID: 7022728451141910884, guid: 841d3a448c7b6ec41bafa3b1e54013c3, type: 3}
       propertyPath: m_RootOrder
       value: 16
@@ -1158,6 +1217,10 @@ PrefabInstance:
       propertyPath: m_Convex
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7843113676692925598, guid: 804f0683157fd6140930199594552cb6, type: 3}
+      propertyPath: somen
+      value: 
+      objectReference: {fileID: 3201093389010310681}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 804f0683157fd6140930199594552cb6, type: 3}
 --- !u!4 &1331239715538380008 stripped
@@ -1224,6 +1287,10 @@ PrefabInstance:
       propertyPath: m_Convex
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7843113676692925598, guid: 804f0683157fd6140930199594552cb6, type: 3}
+      propertyPath: somen
+      value: 
+      objectReference: {fileID: 3201093389010310681}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 804f0683157fd6140930199594552cb6, type: 3}
 --- !u!4 &1331239715668988170 stripped
@@ -1242,6 +1309,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: noodle2 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 6872716246095943262, guid: 841d3a448c7b6ec41bafa3b1e54013c3, type: 3}
+      propertyPath: noodle
+      value: 
+      objectReference: {fileID: 3201093389010310681}
     - target: {fileID: 7022728451141910884, guid: 841d3a448c7b6ec41bafa3b1e54013c3, type: 3}
       propertyPath: m_RootOrder
       value: 19
@@ -1352,6 +1423,10 @@ PrefabInstance:
       propertyPath: m_Convex
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7843113676692925598, guid: 804f0683157fd6140930199594552cb6, type: 3}
+      propertyPath: somen
+      value: 
+      objectReference: {fileID: 3201093389010310681}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 804f0683157fd6140930199594552cb6, type: 3}
 --- !u!4 &1331239716134363656 stripped
@@ -1418,6 +1493,10 @@ PrefabInstance:
       propertyPath: m_Convex
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7843113676692925598, guid: 804f0683157fd6140930199594552cb6, type: 3}
+      propertyPath: somen
+      value: 
+      objectReference: {fileID: 3201093389010310681}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 804f0683157fd6140930199594552cb6, type: 3}
 --- !u!4 &1331239716181295680 stripped
