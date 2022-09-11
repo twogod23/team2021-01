@@ -374,6 +374,7 @@
 "Assets/Scripts/SomenGet.cs"
 "Assets/Scripts/SomenMove.cs"
 "Assets/Scripts/Timer.cs"
+"Assets/Scripts/ToGameScene1.cs"
 "Assets/Scripts/ToMenuScene.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01_UGUI.cs"
