@@ -21,6 +21,6 @@ public class ToMenuScene : MonoBehaviour
     public void Select()
     {
         //ゲームシーンに移動
-        SceneManager.LoadScene("GameScene");
+        SceneManager.LoadScene("MenuScene");
     }
 }

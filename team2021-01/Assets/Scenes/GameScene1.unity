@@ -390,6 +390,10 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 1578875512}
+    - target: {fileID: 2521832492729322070, guid: 3e51097ca6e63864bb989226f7971548, type: 3}
+      propertyPath: prefabEndMessage
+      value: 
+      objectReference: {fileID: 9191623476450908423, guid: b3059f86e12b5384e83fae4c8ee4e778, type: 3}
     - target: {fileID: 3999355000126291465, guid: 3e51097ca6e63864bb989226f7971548, type: 3}
       propertyPath: m_ScreenMatchMode
       value: 2
@@ -450,6 +454,10 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 1578875512}
+    - target: {fileID: 7534669422327471955, guid: 3e51097ca6e63864bb989226f7971548, type: 3}
+      propertyPath: m_AdditionalShaderChannelsFlag
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 8529962054638353233, guid: 3e51097ca6e63864bb989226f7971548, type: 3}
       propertyPath: prefabSomen
       value: 

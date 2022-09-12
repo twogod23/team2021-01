@@ -29,9 +29,9 @@ public class Score : MonoBehaviour
         scoretxt.text = "得点：" + score.ToString();
     }
 
-    /*//リザルト画面で使う
-    public static int GetScore();
+    //リザルト画面で使う
+    public static int GetScore()
     {
         return score;
-    }*/
+    }
 }
