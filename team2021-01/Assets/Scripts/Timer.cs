@@ -8,19 +8,24 @@ using UnityEngine.SceneManagement;
 public class Timer : MonoBehaviour
 {
     //制限時間の指定
-    public static float countdown = 120.0f;
+    public static float countdown;
     //テキストの指定
     public TextMeshProUGUI timer;
     //終了済みの真偽を判定
-    private bool timeup = false;
+    private bool timeup;
     //終了後の時間を計測
-    private float timeupTime = 2.0f;
+    private float timeupTime;
     //終了後のメッセージを指定
     public GameObject prefabEndMessage;
 
     // Start is called before the first frame update
     void Start()
     {
+        //初期値の設定
+        countdown = 120.0f;
+        timeup = false;
+        timeupTime = 2.0f;
+        
         timer.text = "";
     }
 

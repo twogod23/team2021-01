@@ -7,7 +7,7 @@ using TMPro;
 public class Score : MonoBehaviour
 {
     //得点の指定
-    public static int score = 0;
+    public static int score;
     //テキストの指定
     public TextMeshProUGUI scoretxt;
 
@@ -20,6 +20,8 @@ public class Score : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //初期値を設定
+        score = 0;
         scoretxt.text = "";
     }
 
