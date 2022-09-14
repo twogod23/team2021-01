@@ -17,6 +17,8 @@ public class Timer : MonoBehaviour
     private float timeupTime;
     //終了後のメッセージを指定
     public GameObject prefabEndMessage;
+    //ポーズメニューを開いているか判断
+    private bool pauseMenu;
 
     // Start is called before the first frame update
     void Start()
@@ -25,7 +27,8 @@ public class Timer : MonoBehaviour
         countdown = 120.0f;
         timeup = false;
         timeupTime = 2.0f;
-        
+        pauseMenu = false;
+
         timer.text = "";
     }
 
@@ -34,8 +37,13 @@ public class Timer : MonoBehaviour
     {
         if(countdown >= 0)
         {
-            //時間の管理
-            countdown -= Time.deltaTime;
+            //ポーズメニューが開いていない場合
+            if(pauseMenu == false)
+            {
+                //時間の管理
+                countdown -= Time.deltaTime;
+            }
+
             //時間の表示
             timer.text = "残り時間：" + countdown.ToString("f1");
         }
@@ -64,8 +72,19 @@ public class Timer : MonoBehaviour
         }
     }
 
+    //アイテム生成スクリプトと時間情報を共有
     public static float GetTime()
     {
         return countdown;
+    }
+
+    //ポーズメニューを判断
+    public void openPause()
+    {
+        pauseMenu = true;
+    }
+    public void closePause()
+    {
+        pauseMenu = false;
     }
 }
