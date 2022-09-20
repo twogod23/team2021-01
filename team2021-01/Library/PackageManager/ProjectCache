@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637976065367664271
-    m_Hash: 3923793661
+      ticks: 637990598204414447
+    m_Hash: 3844401438
   m_LockFileStatus:
     m_FilePath: C:/Users/Akito/Documents/Programming/Unity/team2021-01/team2021-01/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637976065367694268
-    m_Hash: 2086370132
+      ticks: 637990598204414447
+    m_Hash: 1394863520
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
