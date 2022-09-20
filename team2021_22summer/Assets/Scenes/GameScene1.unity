@@ -123,6 +123,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &1489685700 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3614738371858475408, guid: 3e51097ca6e63864bb989226f7971548, type: 3}
+  m_PrefabInstance: {fileID: 6245222634599447897}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1560635282
 GameObject:
   m_ObjectHideFlags: 0
@@ -396,7 +401,7 @@ PrefabInstance:
       objectReference: {fileID: 9191623476450908423, guid: b3059f86e12b5384e83fae4c8ee4e778, type: 3}
     - target: {fileID: 3843636673029025258, guid: 3e51097ca6e63864bb989226f7971548, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3999355000126291465, guid: 3e51097ca6e63864bb989226f7971548, type: 3}
       propertyPath: m_ScreenMatchMode
@@ -462,6 +467,10 @@ PrefabInstance:
       propertyPath: m_AdditionalShaderChannelsFlag
       value: 25
       objectReference: {fileID: 0}
+    - target: {fileID: 7822484994727853934, guid: 3e51097ca6e63864bb989226f7971548, type: 3}
+      propertyPath: pauseButton
+      value: 
+      objectReference: {fileID: 1489685700}
     - target: {fileID: 8529962054638353233, guid: 3e51097ca6e63864bb989226f7971548, type: 3}
       propertyPath: prefabSomen
       value: 
