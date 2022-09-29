@@ -177,6 +177,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0ff3c9be70835b48bc2cc90a8b9f44e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pauseMenuPrefab: {fileID: 3541001150122094604, guid: 127422824e9aa6547b6d5f4969c64e63, type: 3}
 --- !u!136 &3396459676647217331
 CapsuleCollider:
   m_ObjectHideFlags: 0

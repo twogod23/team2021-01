@@ -17,6 +17,8 @@ public class Timer : MonoBehaviour
     private float timeupTime;
     //終了後のメッセージを指定
     public GameObject prefabEndMessage;
+    //ポーズメニューのプレハブを定義
+    public GameObject pauseMenuPrefab;
 
     // Start is called before the first frame update
     void Start()
@@ -32,12 +34,18 @@ public class Timer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //ゲーム中のカウントダウン
         if(countdown >= 0)
         {
-            //時間の管理
-            countdown -= Time.deltaTime;
-            //時間の表示
-            timer.text = "残り時間：" + countdown.ToString("f1");
+             //ポーズメニューの存在の可否でオブジェクトの流れを制御
+            GameObject pauseMenu = GameObject.Find(pauseMenuPrefab.name);
+            if (pauseMenu == null)
+            {
+                //時間の管理
+                countdown -= Time.deltaTime;
+                //時間の表示
+                timer.text = "残り時間：" + countdown.ToString("f1");
+            }
         }
         //時間切れ後の処理
         else

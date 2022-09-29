@@ -401,7 +401,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timer: {fileID: 543269537416885983}
-  prefabEndMessage: {fileID: 0}
+  prefabEndMessage: {fileID: 9191623476450908423, guid: b3059f86e12b5384e83fae4c8ee4e778, type: 3}
+  pauseMenuPrefab: {fileID: 3541001150122094604, guid: 127422824e9aa6547b6d5f4969c64e63, type: 3}
 --- !u!1 &2316037391960144477
 GameObject:
   m_ObjectHideFlags: 0
