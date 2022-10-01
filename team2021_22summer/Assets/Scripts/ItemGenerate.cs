@@ -66,7 +66,16 @@ public class ItemGenerate : MonoBehaviour
             itemNum++;
         }
 
-        //アイテムをランダムに並べ替え　フィッシャー–イェーツのシャッフル
+        //アイテムをランダムに並べ替え　フィッシャー イェーツのシャッフル
+        for (int i = itemTotal - 1; i > 0; --i)
+        {
+            //ランダムな整数を取得
+            int j = Random.Range(0, i + 1);
+            //要素の交換
+            string arrayItem = itemSelect[i];
+            itemSelect[i] = itemSelect[j];
+            itemSelect[j] = arrayItem;
+        }
 
         //配列の要素番号を再び初期化
         itemNum = 0;
@@ -104,7 +113,7 @@ public class ItemGenerate : MonoBehaviour
                     default:
                         break;
                 }
-
+                
                 itemNum++;
             }
         }
