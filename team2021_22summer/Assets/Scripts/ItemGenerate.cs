@@ -13,7 +13,21 @@ public class ItemGenerate : MonoBehaviour
         public GameObject prefabWM;
 
     //アイテムを生成する時間の配列
-    private float[] itemTime = {2.0f, 117.0f};
+    private float[] itemTime = 
+    {
+        0.0f,
+        10.0f,
+        20.0f,
+        30.0f,
+        40.0f,
+        50.0f,
+        60.0f,
+        70.0f,
+        80.0f,
+        90.0f,
+        100.0f,
+        110.0f, 117.0f
+    };
 
     //生成するアイテムを指定する配列
     private string[] itemSelect;
@@ -23,11 +37,11 @@ public class ItemGenerate : MonoBehaviour
 
     //生成するアイテムの個数を指定
         //そうめん
-        private int somenNum;
+        private int somenNum = 7;
         //赤いそうめん
-        private int redsomenNum;
+        private int redsomenNum = 4;
         //スイカ
-        private int wmNum;
+        private int wmNum = 2;
 
     //配列の要素番号を管理
     private int itemNum;
@@ -47,38 +61,46 @@ public class ItemGenerate : MonoBehaviour
         itemNum = 0;
 
         //アイテムを指定する配列の生成
-        //そうめん
-        for (int i = 0; i < somenNum; i++)
+        if (itemTotal == somenNum + redsomenNum + wmNum)
         {
-            itemSelect[itemNum] = "Somen";
-            itemNum++;
+            //そうめん
+            for (int i = 0; i < somenNum; i++)
+            {
+                itemSelect[itemNum] = "Somen";
+                itemNum++;
+            }
+            //赤いそうめん
+            for (int i = 0; i < redsomenNum; i++)
+            {
+                itemSelect[itemNum] = "RedSomen";
+                itemNum++;
+            }
+            //スイカ
+            for (int i = 0; i < wmNum; i++)
+            {
+                itemSelect[itemNum] = "WM";
+                itemNum++;
+            }
+
+            //アイテムをランダムに並べ替え　フィッシャー イェーツのシャッフル
+            for (int i = itemTotal - 1; i > 0; --i)
+            {
+                //ランダムな整数を取得
+                int j = Random.Range(0, i + 1);
+                //要素の交換
+                string arrayItem = itemSelect[i];
+                itemSelect[i] = itemSelect[j];
+                itemSelect[j] = arrayItem;
+            }
+
+            //配列の要素番号を補正
+            itemNum--;
         }
-        //赤いそうめん
-        for (int i = 0; i < redsomenNum; i++)
+        else
         {
-            itemSelect[itemNum] = "RedSomen";
-            itemNum++;
-        }
-        //スイカ
-        for (int i = 0; i < wmNum; i++)
-        {
-            itemSelect[itemNum] = "WM";
-            itemNum++;
+            Debug.Log("アイテムの数と設定した時間の数が一致しません" + "アイテム：" + (somenNum + redsomenNum + wmNum) + " 時間：" + itemTotal);
         }
 
-        //アイテムをランダムに並べ替え　フィッシャー イェーツのシャッフル
-        for (int i = itemTotal - 1; i > 0; --i)
-        {
-            //ランダムな整数を取得
-            int j = Random.Range(0, i + 1);
-            //要素の交換
-            string arrayItem = itemSelect[i];
-            itemSelect[i] = itemSelect[j];
-            itemSelect[j] = arrayItem;
-        }
-
-        //配列の要素番号を再び初期化
-        itemNum = 0;
     }
 
 
@@ -89,7 +111,7 @@ public class ItemGenerate : MonoBehaviour
         time = Timer.GetTime();
 
         //アイテムの生成
-        if (itemNum < itemTotal)
+        if (itemNum >= 0)
         {
             //指定時間になったらアイテムを生成
             if (itemTime[itemNum] >= time)
@@ -114,7 +136,7 @@ public class ItemGenerate : MonoBehaviour
                         break;
                 }
                 
-                itemNum++;
+                itemNum--;
             }
         }
     }

@@ -253,8 +253,8 @@ GameObject:
   - component: {fileID: 3755376773859678422}
   - component: {fileID: 3755376773859678421}
   - component: {fileID: 3755376773859678420}
-  - component: {fileID: 3755376773859678427}
   - component: {fileID: 3755376773859678426}
+  - component: {fileID: 5367214401117963296}
   m_Layer: 0
   m_Name: Somen VerRed
   m_TagString: Somen
@@ -321,19 +321,6 @@ CapsuleCollider:
   m_Height: 7.012027
   m_Direction: 0
   m_Center: {x: 1.1550374, y: -0.59249175, z: -0.05644536}
---- !u!114 &3755376773859678427
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3755376773859678425}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c76416fcfaebf84981fd2043252ea86, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  somen: {fileID: 3755376773859678425}
 --- !u!114 &3755376773859678426
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -347,6 +334,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 3755376773859678425}
+--- !u!114 &5367214401117963296
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3755376773859678425}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08c03af74f2d9624ab0002d8739caa95, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  redsomen: {fileID: 3755376773859678425}
 --- !u!1 &3755376774109234018
 GameObject:
   m_ObjectHideFlags: 0

@@ -16,6 +16,16 @@ public class Score : MonoBehaviour
     {
         score += 1;
     }
+    //赤いそうめん
+    public void GetRedSomen()
+    {
+        score += 2;
+    }
+    //すいか
+    public void GetWM()
+    {
+        score += 3;
+    }
 
     // Start is called before the first frame update
     void Start()

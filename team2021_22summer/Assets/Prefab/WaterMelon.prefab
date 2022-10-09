@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 5894794949191498307}
   - component: {fileID: 5894794949191498333}
   - component: {fileID: 5894794949191498332}
-  - component: {fileID: 5894794949191498334}
   - component: {fileID: 7983421074103033505}
+  - component: {fileID: 6381759049487408586}
   m_Layer: 0
   m_Name: WaterMelon
   m_TagString: WaterMelon
@@ -79,19 +79,6 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 1.0112301
   m_Center: {x: 0, y: 0, z: -0.009482741}
---- !u!114 &5894794949191498334
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5894794949191498305}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1dad06f45b69fb84490e17ca086c8e9a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  item: {fileID: 5894794949191498305}
 --- !u!114 &7983421074103033505
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -105,6 +92,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 5894794949191498305}
+--- !u!114 &6381759049487408586
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5894794949191498305}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 211c93c3ad122854eb4c4c43efe49f94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  watermelon: {fileID: 5894794949191498305}
 --- !u!1001 &5894794949995968237
 PrefabInstance:
   m_ObjectHideFlags: 0
