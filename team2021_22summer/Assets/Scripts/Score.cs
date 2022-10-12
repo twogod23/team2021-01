@@ -41,7 +41,7 @@ public class Score : MonoBehaviour
         scoretxt.text = "得点：" + score.ToString();
     }
 
-    //リザルト画面で使う
+    //他のスクリプトで得点を取得
     public static int GetScore()
     {
         return score;
