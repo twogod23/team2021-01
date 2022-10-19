@@ -8,6 +8,8 @@ using UnityEngine.SceneManagement;
 public class Timer : MonoBehaviour
 {
     //制限時間の指定
+    public static float limitTime = 120.0f;
+    //残り時間の指定
     public static float countdown;
     //テキストの指定
     public TextMeshProUGUI timer;
@@ -24,7 +26,7 @@ public class Timer : MonoBehaviour
     void Start()
     {
         //初期値の設定
-        countdown = 120.0f;
+        countdown = limitTime;
         timeup = false;
         timeupTime = 2.0f;
         
@@ -75,5 +77,9 @@ public class Timer : MonoBehaviour
     public static float GetTime()
     {
         return countdown;
+    }
+    public static float GetLimitTime()
+    {
+        return limitTime;
     }
 }
