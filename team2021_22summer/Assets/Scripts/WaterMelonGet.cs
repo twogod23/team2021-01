@@ -11,14 +11,22 @@ public class WaterMelonGet : MonoBehaviour, IPointerClickHandler
     private GameObject score;
     //アイテムのRigidBodyを取得
     private Rigidbody rbItem;
+    //コライダーを取得
+    private Collider parentCollider;
+    private Collider childCollider;
     //取得済みかどうかを判定
     private bool gotItem = false;
+    //アイテム取得時間を管理
+    private float afterGetTime;
 
     // Start is called before the first frame update
     void Start()
     {
         score = GameObject.Find("Score");
         rbItem = GetComponentInChildren<Rigidbody>();
+        parentCollider = GetComponent<Collider>();
+        childCollider = GetComponentInChildren<Collider>();
+        afterGetTime = 0;
     }
 
     // Update is called once per frame
@@ -26,7 +34,15 @@ public class WaterMelonGet : MonoBehaviour, IPointerClickHandler
     {
         if (gotItem == true)
         {
+            rbItem.velocity = Vector3.zero;
             rbItem.AddForce(Vector3.up * 100.0f);
+            //一定時間後にアイテムを削除
+            float time = afterGetTime - Timer.GetTime();
+            if (time > 2.0f)
+            {
+                Destroy(watermelon);
+            }
+            
         }
     }
 
@@ -41,9 +57,12 @@ public class WaterMelonGet : MonoBehaviour, IPointerClickHandler
             watermelon.GetComponent<ItemMove>().enabled = false;
             //加点作業
             score.GetComponent<Score>().GetWM();
+            //判定用のコライダーを削除
+            parentCollider.enabled = false;
+            childCollider.enabled = false;
+            //アイテム取得時間を取得
+            afterGetTime = Timer.GetTime();
         }
-        //オブジェクトを消去
-        //Destroy(watermelon);
         Debug.Log("click");
     }
 }

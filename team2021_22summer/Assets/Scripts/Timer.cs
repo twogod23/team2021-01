@@ -74,10 +74,12 @@ public class Timer : MonoBehaviour
         }
     }
 
+    //残り時間を提供
     public static float GetTime()
     {
         return countdown;
     }
+    //制限時間を提供
     public static float GetLimitTime()
     {
         return limitTime;
