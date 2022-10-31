@@ -10,11 +10,14 @@ public class Score : MonoBehaviour
     public static int score;
     //テキストの指定
     public TextMeshProUGUI scoretxt;
+    //そうめんの有無を判定
+    public static string inSomen;
 
     //そうめんの得点計算
     public void GetSomen()
     {
         score += 1;
+        inSomen = "true";
     }
     //赤いそうめん
     public void GetRedSomen()
@@ -33,6 +36,7 @@ public class Score : MonoBehaviour
         //初期値を設定
         score = 0;
         scoretxt.text = "";
+        inSomen = "false";
     }
 
     // Update is called once per frame
@@ -45,5 +49,11 @@ public class Score : MonoBehaviour
     public static int GetScore()
     {
         return score;
+    }
+
+    //他のスクリプトでそうめんの獲得有無を取得
+    public static string GetInSomen()
+    {
+        return inSomen;
     }
 }
