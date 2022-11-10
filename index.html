@@ -114,6 +114,25 @@
         });
       };
       document.body.appendChild(script);
+      
+      //screensize
+      var canvas = document.getElementById("unity-canvas");
+
+      function resize()
+      {
+        canvas.style.height = document.documentElement.clientHeight + "px";
+        canvas.style.width = ((document.documentElement.clientHeight / 16 )* 9) + "px";
+        if (((document.documentElement.clientHeight / 16 )* 9) > document.documentElement.clientWidth)
+        {
+          canvas.style.width = document.documentElement.clientWidth + "px";
+          canvas.style.height = ((document.documentElement.clientWidth / 9 )* 16) + "px";
+        }
+      }
+
+      resize();
+
+      window.onresize = resize;
+      
     </script>
   </body>
 </html>
