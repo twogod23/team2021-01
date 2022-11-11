@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -979,7 +979,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5894794949191498305, guid: 7f6d9275bf9ebf44092993a3e115d696, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5894794949191498306, guid: 7f6d9275bf9ebf44092993a3e115d696, type: 3}
       propertyPath: m_RootOrder
@@ -1042,6 +1042,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 543269537416885983, guid: 3e51097ca6e63864bb989226f7971548, type: 3}
+      propertyPath: m_fontSize
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 543269537416885983, guid: 3e51097ca6e63864bb989226f7971548, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: c8d625967cd2e6d4e96bb8ba5cac4db7, type: 2}
+    - target: {fileID: 543269537416885983, guid: 3e51097ca6e63864bb989226f7971548, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 543269537416885983, guid: 3e51097ca6e63864bb989226f7971548, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 235731046994895333, guid: c8d625967cd2e6d4e96bb8ba5cac4db7, type: 2}
     - target: {fileID: 1354091665711667668, guid: 3e51097ca6e63864bb989226f7971548, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -1054,6 +1070,22 @@ PrefabInstance:
       propertyPath: prefabEndMessage
       value: 
       objectReference: {fileID: 9191623476450908423, guid: b3059f86e12b5384e83fae4c8ee4e778, type: 3}
+    - target: {fileID: 2616427853784955472, guid: 3e51097ca6e63864bb989226f7971548, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1200
+      objectReference: {fileID: 0}
+    - target: {fileID: 2616427853784955472, guid: 3e51097ca6e63864bb989226f7971548, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 2616427853784955472, guid: 3e51097ca6e63864bb989226f7971548, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 630
+      objectReference: {fileID: 0}
+    - target: {fileID: 2616427853784955472, guid: 3e51097ca6e63864bb989226f7971548, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -70
+      objectReference: {fileID: 0}
     - target: {fileID: 3344463234440745862, guid: 3e51097ca6e63864bb989226f7971548, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -1073,6 +1105,22 @@ PrefabInstance:
     - target: {fileID: 5482374490053204210, guid: 3e51097ca6e63864bb989226f7971548, type: 3}
       propertyPath: m_LocalPosition.y
       value: -1.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 6138155208174502570, guid: 3e51097ca6e63864bb989226f7971548, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1200
+      objectReference: {fileID: 0}
+    - target: {fileID: 6138155208174502570, guid: 3e51097ca6e63864bb989226f7971548, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 6138155208174502570, guid: 3e51097ca6e63864bb989226f7971548, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 630
+      objectReference: {fileID: 0}
+    - target: {fileID: 6138155208174502570, guid: 3e51097ca6e63864bb989226f7971548, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -190
       objectReference: {fileID: 0}
     - target: {fileID: 7293551632375917971, guid: 3e51097ca6e63864bb989226f7971548, type: 3}
       propertyPath: m_RootOrder
@@ -1126,6 +1174,22 @@ PrefabInstance:
       propertyPath: m_AdditionalShaderChannelsFlag
       value: 25
       objectReference: {fileID: 0}
+    - target: {fileID: 7770820564375383587, guid: 3e51097ca6e63864bb989226f7971548, type: 3}
+      propertyPath: m_fontSize
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 7770820564375383587, guid: 3e51097ca6e63864bb989226f7971548, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: c8d625967cd2e6d4e96bb8ba5cac4db7, type: 2}
+    - target: {fileID: 7770820564375383587, guid: 3e51097ca6e63864bb989226f7971548, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 7770820564375383587, guid: 3e51097ca6e63864bb989226f7971548, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 235731046994895333, guid: c8d625967cd2e6d4e96bb8ba5cac4db7, type: 2}
     - target: {fileID: 7822484994727853934, guid: 3e51097ca6e63864bb989226f7971548, type: 3}
       propertyPath: pauseButton
       value: 
