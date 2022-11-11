@@ -121,14 +121,14 @@
       function resize()
       {
         canvas.style.height = document.documentElement.clientHeight + "px";
-        canvas.style.width = ((document.documentElement.clientHeight / 16 )* 9) + "px";
+        canvas.style.width = ((document.documentElement.clientHeight / 9 )* 16) + "px";
         canvas.style.padding.left = ((document.documentElement.clientWidth - canvas.style.width) / 2) + "px";
         canvas.style.padding.right = ((document.documentElement.clientWidth - canvas.style.width) / 2) + "px";
         
-        if (((document.documentElement.clientHeight / 16 )* 9)  document.documentElement.clientWidth)
+        if (((document.documentElement.clientHeight / 9 )* 16) > document.documentElement.clientWidth)
         {
           canvas.style.width = document.documentElement.clientWidth + "px";
-          canvas.style.height = ((document.documentElement.clientWidth / 9 )* 16) + "px";
+          canvas.style.height = ((document.documentElement.clientWidth / 16 )* 9) + "px";
           canvas.style.padding.left = ((document.documentElement.clientHeight - canvas.style.height) / 2) + "px";
           canvas.style.padding.right = ((document.documentElement.clientHeight - canvas.style.height) / 2) + "px";
         }
