@@ -18,7 +18,7 @@ public class Timer : MonoBehaviour
     //終了後の時間を計測
     private float timeupTime;
     //終了後のメッセージを指定
-    public GameObject prefabEndMessage;
+    public GameObject endMessage;
     //ポーズメニューのプレハブを定義
     public GameObject pauseMenuPrefab;
 
@@ -31,6 +31,9 @@ public class Timer : MonoBehaviour
         timeupTime = 2.0f;
         
         timer.text = "";
+
+        //終了後のメッセージを非表示
+        endMessage.SetActive(false);
     }
 
     // Update is called once per frame
@@ -57,7 +60,7 @@ public class Timer : MonoBehaviour
             if(timeup == false)
             {
                 //終了を案内
-                Instantiate(prefabEndMessage);
+                endMessage.SetActive(true);
                 //終了判定を真にする
                 timeup = true;
             }

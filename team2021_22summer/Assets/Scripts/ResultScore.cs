@@ -17,7 +17,7 @@ public class ResultScore : MonoBehaviour
         //得点の取得
         score = Score.GetScore();
         //得点を表示
-        scoretext.text = string.Format("SCORE : {0}", score);
+        scoretext.text = string.Format("得点 : {0}", score);
     }
 
     // Update is called once per frame
