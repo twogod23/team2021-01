@@ -2,7 +2,12 @@ fileFormatVersion: 2
 guid: 160570cbc0cdee24d9a6a9cc03fcce7a
 ScriptedImporter:
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: "\u30A2\u30FC\u30DE\u30C1\u30E5\u30A2Action.002"
+    second: {fileID: 7400000, guid: 19ecc464bb4bb004ea49803b00e46647, type: 2}
   serializedVersion: 2
   userData: 
   assetBundleName: 
