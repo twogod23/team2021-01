@@ -302,7 +302,7 @@ GameObject:
   - component: {fileID: 806868251}
   - component: {fileID: 806868250}
   m_Layer: 0
-  m_Name: ude_all
+  m_Name: arm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -731,6 +731,7 @@ GameObject:
   - component: {fileID: 2089751465}
   - component: {fileID: 2089751464}
   - component: {fileID: 2089751463}
+  - component: {fileID: 2089751467}
   m_Layer: 5
   m_Name: HandCanvas
   m_TagString: Untagged
@@ -821,6 +822,19 @@ RectTransform:
   m_AnchoredPosition: {x: 462.5, y: 256.5}
   m_SizeDelta: {x: 914, y: 514}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2089751467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2089751462}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d0451ae44db6704787d18673f9823f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  armImage: {fileID: 806868248}
 --- !u!1001 &3396459677754773515
 PrefabInstance:
   m_ObjectHideFlags: 0

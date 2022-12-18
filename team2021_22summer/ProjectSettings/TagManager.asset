@@ -9,6 +9,7 @@ TagManager:
   - WaterMelon
   - RedSomen
   - Item
+  - PlayAnimeSomen
   layers:
   - Default
   - TransparentFX

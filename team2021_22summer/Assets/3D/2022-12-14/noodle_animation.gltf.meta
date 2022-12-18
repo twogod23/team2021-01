@@ -2,7 +2,17 @@ fileFormatVersion: 2
 guid: 2eff17bbe9bd6e74eb7fda8184c5f7f8
 ScriptedImporter:
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: "BONEACTION_\u30A2\u30FC\u30DE\u30C1\u30E5\u30A2"
+    second: {fileID: 7400000, guid: 8d3e1096321d5174a8f16f80e0062f52, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: noodle_animation
+    second: {fileID: 7400000, guid: 8d6db96bca9e32f4dbd401584d6bb843, type: 2}
   serializedVersion: 2
   userData: 
   assetBundleName: 
