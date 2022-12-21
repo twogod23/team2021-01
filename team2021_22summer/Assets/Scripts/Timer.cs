@@ -42,7 +42,7 @@ public class Timer : MonoBehaviour
         //ゲーム中のカウントダウン
         if(countdown >= 0)
         {
-             //ポーズメニューの存在の可否でオブジェクトの流れを制御
+            //ポーズメニューの存在の可否でオブジェクトの流れを制御
             GameObject pauseMenu = GameObject.Find(pauseMenuPrefab.name);
             if (pauseMenu == null)
             {

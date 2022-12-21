@@ -71,6 +71,5 @@ public class WaterMelonGet : MonoBehaviour, IPointerClickHandler
             //最初に上向きに力を加える
             rbItem.AddForce(Vector3.up * startMoveUp);
         }
-        Debug.Log("click");
     }
 }

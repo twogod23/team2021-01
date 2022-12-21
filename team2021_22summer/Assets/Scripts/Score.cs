@@ -20,19 +20,21 @@ public class Score : MonoBehaviour
     {
         score += 1;
         getRecentItem = "Somen";
-
+        otetsukiManager.GetComponent<OtetsukiCounter>().GetItem();
     }
     //赤いそうめん
     public void GetRedSomen()
     {
         score += 2;
         getRecentItem = "RedSomen";
+        otetsukiManager.GetComponent<OtetsukiCounter>().GetItem();
     }
     //すいか
     public void GetWM()
     {
         score += 3;
         getRecentItem = "WaterMelon";
+        otetsukiManager.GetComponent<OtetsukiCounter>().GetItem();
     }
 
     // Start is called before the first frame update
