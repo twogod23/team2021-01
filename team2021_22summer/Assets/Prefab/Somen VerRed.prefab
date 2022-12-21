@@ -109,7 +109,7 @@ MonoBehaviour:
   redSomen: {fileID: 3755376773859678425}
   redSomenBefore: {fileID: 3796313857532614056}
   redSomenAfter: {fileID: 1997399832311484084}
-  moveUp: 0.05
+  moveUp: 0.08
 --- !u!1001 &2013663171935166619
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -282,11 +282,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4467138112451190354, guid: 0c53c3e5172000147a2991c4b4e3c695, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.67
+      value: -0.65
       objectReference: {fileID: 0}
     - target: {fileID: 4467138112451190354, guid: 0c53c3e5172000147a2991c4b4e3c695, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.07
+      value: -0.17
       objectReference: {fileID: 0}
     - target: {fileID: 4467138112451190354, guid: 0c53c3e5172000147a2991c4b4e3c695, type: 3}
       propertyPath: m_LocalRotation.w

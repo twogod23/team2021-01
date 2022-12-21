@@ -12,12 +12,15 @@ public class Score : MonoBehaviour
     public TextMeshProUGUI scoretxt;
     //直近で獲得したアイテムを判定
     private static string getRecentItem;
+    //お手つきの判定をするゲームオブジェクト
+    public GameObject otetsukiManager;
 
     //そうめんの得点計算
     public void GetSomen()
     {
         score += 1;
         getRecentItem = "Somen";
+
     }
     //赤いそうめん
     public void GetRedSomen()
