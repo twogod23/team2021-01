@@ -8,6 +8,8 @@ public class ClosePauseMenu : MonoBehaviour
     public GameObject pauseMenu;
     //ポーズメニュー画面へ遷移するボタンの指定
     public GameObject pauseButton;
+    //お手つきの判定をするゲームオブジェクト
+    public GameObject otetsukiManager;
 
     void Start()
     {
@@ -20,5 +22,6 @@ public class ClosePauseMenu : MonoBehaviour
     {
         pauseMenu.SetActive(false);
         pauseButton.SetActive(true);
+        otetsukiManager.GetComponent<OtetsukiCounter>().PushPause();
     }
 }

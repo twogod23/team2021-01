@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
+
 
 public class OtetsukiCounter : MonoBehaviour
 {
@@ -14,10 +16,16 @@ public class OtetsukiCounter : MonoBehaviour
     private float stopTime = 2.0f;
     //お手つきした時間を取得
     private float otetsukiTime;
+    //ペナルティの残り時間をカウント
+    private float pTime;
     //残り時間を取得
     private float time;
     //お手つきの真偽を判定
     private bool otetsuki;
+    //お手つきのメッセージを表示
+    public GameObject otetsukiMessage;
+    //お手つきのテキストの指定
+    public TextMeshProUGUI otetsukiText;
     
 
     //取得したアイテムの数をカウント
@@ -39,22 +47,33 @@ public class OtetsukiCounter : MonoBehaviour
         //初期化
         clickCounter = 0;
         getCounter = 0;
+        otetsukiMessage.SetActive(false);
+        otetsukiText.text = "";
     }
 
     // Update is called once per frame
     void Update()
     {
+        //お手つきのペナルティ時
         if (otetsuki == true)
         {
             time = Timer.GetTime();
-            if (time < otetsukiTime - stopTime)
+            pTime = otetsukiTime - time;
+            otetsukiText.text = (stopTime - pTime).ToString("f1");
+
+            //ペナルティ解除
+            if (pTime > stopTime)
             {
                 otetsuki = false;
+                otetsukiMessage.SetActive(false);
+                otetsukiText.text = "";
                 Debug.Log("stop");
             }
         }
-        
-        //ポーズメニューの存在の可否
+        //ペナルティが無いとき
+        else
+        {
+            //ポーズメニューの存在の可否
             GameObject pauseMenu = GameObject.Find(pauseMenuPrefab.name);
             if (pauseMenu == null)
             {
@@ -64,11 +83,13 @@ public class OtetsukiCounter : MonoBehaviour
                     clickCounter += 1;
                 }
             }
-
+        }
+        
         //お手つき判定
         if (clickCounter > getCounter)
         {
             Debug.Log("お手つき");
+            otetsukiMessage.SetActive(true);
             otetsuki = true;
             clickCounter = getCounter;
             otetsukiTime = Timer.GetTime();

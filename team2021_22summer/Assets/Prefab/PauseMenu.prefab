@@ -148,6 +148,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 3541001150122094604}
   pauseButton: {fileID: 0}
+  otetsukiManager: {fileID: 0}
 --- !u!1 &841728850998341219
 GameObject:
   m_ObjectHideFlags: 0
@@ -207,7 +208,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 7
   m_TargetDisplay: 0
 --- !u!114 &4579340016568677009
 MonoBehaviour:
@@ -311,7 +312,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
-  m_SortingOrder: 4
+  m_SortingOrder: 9
   m_TargetDisplay: 0
 --- !u!114 &7482998987872747623
 MonoBehaviour:
