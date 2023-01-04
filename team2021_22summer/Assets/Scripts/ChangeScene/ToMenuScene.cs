@@ -5,22 +5,33 @@ using UnityEngine.SceneManagement;
 
 public class ToMenuScene : MonoBehaviour
 {
-    // Start is called before the first frame update
+    //サウンドの指定
+    public AudioSource selectSound;
+    //ボタンを押したかどうか判定
+    private bool pushButton;
+    //ボタンを押した時間を取得
+    private float pushTime;
+
     void Start()
     {
-        
+        //初期化
+        pushButton = false;
     }
-
-    // Update is called once per frame
     void Update()
     {
         
+        if(pushButton == true)
+        {
+            if(Time.deltaTime - pushTime > 1.5f)
+            {
+                SceneManager.LoadScene("MenuScene");
+            }
+        }
     }
-
-    //ボタン操作
-    public void Select()
+    
+    public void select()
     {
-        //ゲームシーンに移動
-        SceneManager.LoadScene("MenuScene");
+        pushButton = true;
+        pushTime = Time.deltaTime;
     }
 }
