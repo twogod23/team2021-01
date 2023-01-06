@@ -9,8 +9,6 @@ public class ToMenuScene : MonoBehaviour
     public AudioSource selectSound;
     //ボタンを押したかどうか判定
     private bool pushButton;
-    //ボタンを押した時間を取得
-    private float pushTime;
 
     void Start()
     {
@@ -19,19 +17,14 @@ public class ToMenuScene : MonoBehaviour
     }
     void Update()
     {
-        
-        if(pushButton == true)
+        if(!selectSound.isPlaying && pushButton)
         {
-            if(Time.deltaTime - pushTime > 1.5f)
-            {
-                SceneManager.LoadScene("MenuScene");
-            }
+            SceneManager.LoadScene("MenuScene");
         }
     }
     
-    public void select()
+    public void Select()
     {
         pushButton = true;
-        pushTime = Time.deltaTime;
     }
 }

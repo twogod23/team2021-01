@@ -256,7 +256,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!1 &7628254944824991634
+--- !u!1 &7256498753871084819
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -264,8 +264,8 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4540441966575310233}
-  - component: {fileID: 948064703013664875}
+  - component: {fileID: 3199867423639500310}
+  - component: {fileID: 2020950110187411869}
   m_Layer: 0
   m_Name: BackSound
   m_TagString: Untagged
@@ -273,13 +273,13 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4540441966575310233
+--- !u!4 &3199867423639500310
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7628254944824991634}
+  m_GameObject: {fileID: 7256498753871084819}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -288,13 +288,13 @@ Transform:
   m_Father: {fileID: 1360086033460918518}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!82 &948064703013664875
+--- !u!82 &2020950110187411869
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7628254944824991634}
+  m_GameObject: {fileID: 7256498753871084819}
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
@@ -414,7 +414,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4801553117038351425}
-  - {fileID: 4540441966575310233}
+  - {fileID: 3199867423639500310}
   - {fileID: 1575507218094605767}
   - {fileID: 5745001489476073191}
   m_Father: {fileID: 0}
@@ -434,7 +434,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   selectSource: {fileID: 8899344606151415807}
   selectAudio: {fileID: 8300000, guid: c43b5918ff7f52f468e5310ee96efcb1, type: 3}
-  backSource: {fileID: 948064703013664875}
+  backSource: {fileID: 2020950110187411869}
   backAudio: {fileID: 8300000, guid: 8ab64a97c35fc494b96aa207b0e4e133, type: 3}
   startSource: {fileID: 1213951602393961249}
   startAudio: {fileID: 8300000, guid: afa4db60fb5b58e4d94fdd7370ac1562, type: 3}
