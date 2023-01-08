@@ -9,11 +9,14 @@ public class ToGameScene1 : MonoBehaviour
     public AudioSource selectSound;
     //ボタンを押したかどうか判定
     private bool pushButton;
+    //サウンドを管理するオブジェクトの指定
+    private GameObject soundManager;
 
     void Start()
     {
         //初期化
         pushButton = false;
+        soundManager = GameObject.Find("SoundEffects");
     }
     void Update()
     {
@@ -26,5 +29,6 @@ public class ToGameScene1 : MonoBehaviour
     public void select()
     {
         pushButton = true;
+        soundManager.GetComponent<SoundManager>().SelectSound();
     }
 }

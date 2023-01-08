@@ -10,16 +10,20 @@ public class ClosePauseMenu : MonoBehaviour
     public GameObject pauseButton;
     //お手つきの判定をするゲームオブジェクト
     public GameObject otetsukiManager;
+    //サウンドを管理するオブジェクトの指定
+    private GameObject soundManager;
 
     void Start()
     {
         pauseMenu.SetActive(true);
         pauseButton.SetActive(false);
+        soundManager = GameObject.Find("SoundEffects");
     }
     
     //ポーズメニューを無効にする
     public void close()
     {
+        soundManager.GetComponent<SoundManager>().BackSound();
         pauseMenu.SetActive(false);
         pauseButton.SetActive(true);
         otetsukiManager.GetComponent<OtetsukiCounter>().PushPause();

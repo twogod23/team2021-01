@@ -8,16 +8,20 @@ public class OpenMethodMenu : MonoBehaviour
     public GameObject methodMenu;
     //前画面の指定
     //public GameObject beforeMenu;
+    //サウンドを管理するオブジェクトの指定
+    private GameObject soundManager;
 
     void Start()
     {
         methodMenu.SetActive(false);
         //beforeMenu.SetActive(true);
+        soundManager = GameObject.Find("SoundEffects");
     }
     
     //ポーズメニューを有効にする
     public void open()
     {
+        soundManager.GetComponent<SoundManager>().SelectSound();
         methodMenu.SetActive(true);
         //beforeMenu.SetActive(false);
     }
