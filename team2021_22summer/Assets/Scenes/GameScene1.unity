@@ -123,6 +123,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!82 &583602279 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 1213951602393961249, guid: f2ae9dfe94a91584086a08c153af0ad7, type: 3}
+  m_PrefabInstance: {fileID: 1225311160}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &626103937
 GameObject:
   m_ObjectHideFlags: 0
@@ -1051,6 +1056,10 @@ PrefabInstance:
       value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 543269537416885983, guid: 3e51097ca6e63864bb989226f7971548, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 543269537416885983, guid: 3e51097ca6e63864bb989226f7971548, type: 3}
       propertyPath: m_fontSize
       value: 80
       objectReference: {fileID: 0}
@@ -1074,6 +1083,14 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 1578875512}
+    - target: {fileID: 2035357706011739417, guid: 3e51097ca6e63864bb989226f7971548, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2521832492729322070, guid: 3e51097ca6e63864bb989226f7971548, type: 3}
+      propertyPath: startSound
+      value: 
+      objectReference: {fileID: 583602279}
     - target: {fileID: 2521832492729322070, guid: 3e51097ca6e63864bb989226f7971548, type: 3}
       propertyPath: prefabEndMessage
       value: 
@@ -1110,6 +1127,10 @@ PrefabInstance:
       propertyPath: handImage
       value: 
       objectReference: {fileID: 806868248}
+    - target: {fileID: 4861527101713446187, guid: 3e51097ca6e63864bb989226f7971548, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5461872003402999241, guid: 3e51097ca6e63864bb989226f7971548, type: 3}
       propertyPath: m_Name
       value: GameObject
@@ -1204,6 +1225,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7542504414943489813, guid: 3e51097ca6e63864bb989226f7971548, type: 3}
       propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7770820564375383587, guid: 3e51097ca6e63864bb989226f7971548, type: 3}
+      propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7770820564375383587, guid: 3e51097ca6e63864bb989226f7971548, type: 3}

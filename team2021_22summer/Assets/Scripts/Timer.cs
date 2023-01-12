@@ -21,6 +21,12 @@ public class Timer : MonoBehaviour
     public GameObject endMessage;
     //ポーズメニューのプレハブを定義
     public GameObject pauseMenuPrefab;
+    //サウンドを管理するオブジェクトの指定
+    private GameObject soundManager;
+    //開始のメッセージを指定
+    public GameObject startMessage;
+    //開始サウンドの指定
+    public AudioSource startSound;
 
     // Start is called before the first frame update
     void Start()
@@ -34,6 +40,13 @@ public class Timer : MonoBehaviour
 
         //終了後のメッセージを非表示
         endMessage.SetActive(false);
+
+        //サウンドを管理するオブジェクトの探索
+        soundManager = GameObject.Find("SoundEffects");
+        //開始のサウンドの再生
+        soundManager.GetComponent<SoundManager>().StartSound();
+        //開始のメッセージの表示
+        startMessage.SetActive(true);
     }
 
     // Update is called once per frame
@@ -51,6 +64,12 @@ public class Timer : MonoBehaviour
                 //時間の表示
                 timer.text = "残り時間：" + countdown.ToString("f1");
             }
+
+            //開始のメッセージの非表示
+            if(!startSound.isPlaying)
+            {
+                startMessage.SetActive(false);
+            }
         }
         //時間切れ後の処理
         else
@@ -63,6 +82,8 @@ public class Timer : MonoBehaviour
                 endMessage.SetActive(true);
                 //終了判定を真にする
                 timeup = true;
+                //サウンドの再生
+                soundManager.GetComponent<SoundManager>().EndSound();
             }
             //一定時間後、リザルト画面にシーン遷移
             else

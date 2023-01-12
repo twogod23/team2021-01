@@ -21,6 +21,8 @@ public class SomenGet : MonoBehaviour, IPointerClickHandler
     private Animation somenAnime;
     ///獲得後のそうめんを持ち上げる力を設定
     [SerializeField] private float moveUp;
+    //サウンドを管理するオブジェクトの指定
+    private GameObject soundManager;
 
     // Start is called before the first frame update
     void Start()
@@ -34,6 +36,8 @@ public class SomenGet : MonoBehaviour, IPointerClickHandler
         somen.GetComponent<Collider>().enabled = true;
         //水流に伴う動きを有効化
         somen.GetComponent<ItemMove>().enabled = true;
+        //サウンドを管理するオブジェクトの探索
+        soundManager = GameObject.Find("SoundEffects");
     }
 
     // Update is called once per frame
@@ -83,6 +87,8 @@ public class SomenGet : MonoBehaviour, IPointerClickHandler
             somen.GetComponent<ItemMove>().enabled = false;
             //タグの変更
             somen.tag = "PlayAnimeSomen";
+            //サウンドの再生
+            soundManager.GetComponent<SoundManager>().GetSound();
         }
     }
 }

@@ -16,6 +16,9 @@ public class SoundManager : MonoBehaviour
     //end
     public AudioSource endSource;
     public AudioClip endAudio;
+    //get
+    public AudioSource getSource;
+    public AudioClip getAudio;
     
     // Start is called before the first frame update
     void Start()
@@ -41,5 +44,9 @@ public class SoundManager : MonoBehaviour
     public void EndSound()
     {
         endSource.GetComponent<AudioSource>().PlayOneShot(endAudio);
+    }
+    public void GetSound()
+    {
+        getSource.GetComponent<AudioSource>().PlayOneShot(getAudio);
     }
 }

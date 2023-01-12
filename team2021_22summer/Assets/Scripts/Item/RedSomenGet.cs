@@ -21,6 +21,9 @@ public class RedSomenGet : MonoBehaviour, IPointerClickHandler
     private Animation redSomenAnime;
     ///獲得後のそうめんを持ち上げる力を設定
     [SerializeField] private float moveUp;
+    //サウンドを管理するオブジェクトの指定
+    private GameObject soundManager;
+
 
     // Start is called before the first frame update
     void Start()
@@ -34,6 +37,8 @@ public class RedSomenGet : MonoBehaviour, IPointerClickHandler
         redSomen.GetComponent<Collider>().enabled = true;
         //水流に伴う動きを有効化
         redSomen.GetComponent<ItemMove>().enabled = true;
+        //サウンドを管理するオブジェクトの探索
+        soundManager = GameObject.Find("SoundEffects");
     }
 
     // Update is called once per frame
@@ -83,6 +88,8 @@ public class RedSomenGet : MonoBehaviour, IPointerClickHandler
             redSomen.GetComponent<ItemMove>().enabled = false;
             //タグの変更
             redSomen.tag = "PlayAnimeSomen";
+            //サウンドの再生
+            soundManager.GetComponent<SoundManager>().GetSound();
         }
     }
 }

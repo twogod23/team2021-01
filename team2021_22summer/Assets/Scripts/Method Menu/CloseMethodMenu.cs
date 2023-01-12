@@ -15,12 +15,14 @@ public class CloseMethodMenu : MonoBehaviour
     {
         methodMenu.SetActive(true);
         //beforeMenu.SetActive(false);
+        //サウンドを管理するオブジェクトの探索
         soundManager = GameObject.Find("SoundEffects");
     }
     
     //ポーズメニューを無効にする
     public void close()
     {
+        //サウンドの再生
         soundManager.GetComponent<SoundManager>().BackSound();
         methodMenu.SetActive(false);
         //beforeMenu.SetActive(true);
