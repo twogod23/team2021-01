@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1259,6 +1259,14 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5220503370038607256, guid: 3e51097ca6e63864bb989226f7971548, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5220503370038607256, guid: 3e51097ca6e63864bb989226f7971548, type: 3}
+      propertyPath: m_Interactable
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5461872003402999241, guid: 3e51097ca6e63864bb989226f7971548, type: 3}
       propertyPath: m_Name
       value: GameObject
@@ -1379,6 +1387,10 @@ PrefabInstance:
       propertyPath: pauseButton
       value: 
       objectReference: {fileID: 1489685700}
+    - target: {fileID: 7822484994727853934, guid: 3e51097ca6e63864bb989226f7971548, type: 3}
+      propertyPath: selectSound
+      value: 
+      objectReference: {fileID: 1078329794}
     - target: {fileID: 8529962054638353233, guid: 3e51097ca6e63864bb989226f7971548, type: 3}
       propertyPath: m_Enabled
       value: 0

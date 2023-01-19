@@ -58,16 +58,24 @@ public class OtetsukiCounter : MonoBehaviour
         if (otetsuki == true)
         {
             time = Timer.GetTime();
-            pTime = otetsukiTime - time;
-            otetsukiText.text = (stopTime - pTime).ToString("f1");
-
-            //ペナルティ解除
-            if (pTime > stopTime)
+            if (time >= 0)
             {
-                otetsuki = false;
+                pTime = otetsukiTime - time;
+                otetsukiText.text = (stopTime - pTime).ToString("f1");
+
+                //ペナルティ解除
+                if (pTime > stopTime)
+                {
+                    otetsuki = false;
+                    otetsukiMessage.SetActive(false);
+                    otetsukiText.text = "";
+                    Debug.Log("stop");
+                }
+            }
+            //時間切れの際、強制的に解除
+            else
+            {
                 otetsukiMessage.SetActive(false);
-                otetsukiText.text = "";
-                Debug.Log("stop");
             }
         }
         //ペナルティが無いとき
