@@ -76,3 +76,5 @@ Logs/
 Packages/
 Build/
 WebGL/
+/WebGLBuild
+/Windowsbuild

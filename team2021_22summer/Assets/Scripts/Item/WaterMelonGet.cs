@@ -22,6 +22,8 @@ public class WaterMelonGet : MonoBehaviour, IPointerClickHandler
     [SerializeField] private float moveUp;
     //最初にすいかを持ち上げる力を設定
     [SerializeField] private float startMoveUp;
+    //サウンドを管理するオブジェクトの指定
+    private GameObject soundManager;
 
     // Start is called before the first frame update
     void Start()
@@ -31,6 +33,8 @@ public class WaterMelonGet : MonoBehaviour, IPointerClickHandler
         parentCollider = GetComponent<Collider>();
         childCollider = GetComponentInChildren<Collider>();
         afterGetTime = 0;
+        //サウンドを管理するオブジェクトの探索
+        soundManager = GameObject.Find("SoundEffects");
     }
 
     // Update is called once per frame
@@ -70,6 +74,8 @@ public class WaterMelonGet : MonoBehaviour, IPointerClickHandler
             rbItem.velocity = Vector3.zero;
             //最初に上向きに力を加える
             rbItem.AddForce(Vector3.up * startMoveUp);
+            //サウンドの再生
+            soundManager.GetComponent<SoundManager>().GetSound();
         }
     }
 }

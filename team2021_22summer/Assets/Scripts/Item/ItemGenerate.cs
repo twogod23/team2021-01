@@ -15,17 +15,17 @@ public class ItemGenerate : MonoBehaviour
     //アイテムを生成する時間の配列
     private float[] itemTime = 
     {
-        5.0f, 6.0f, 7.0f, 8.0f, 9.0f,
-        10.0f, 11.0f, 12.0f, 13.0f, 14.0f, 16.0f, 18.0f,
+        3.0f, 4.0f, 5.0f, 6.0f, 7.0f, 8.0f, 9.0f,
+        10.0f, 11.0f, 12.0f, 13.0f, 14.0f, 15.0f, 16.0f, 17.0f, 18.0f,
         20.0f, 22.0f, 24.0f, 26.0f, 28.0f,
-        30.0f, 33.0f, 36.0f, 39.0f,
-        42.0f, 46.0f,
-        50.0f, 54.0f, 58.0f,
-        62.0f, 66.0f,
-        70.0f, 75.0f,
-        80.0f, 85.0f,
-        90.0f, 95.0f,
-        100.0f, 105.0f,
+        30.0f, 32.0f, 34.0f,  36.0f, 38.0f,
+        40.0f, 43.0f, 46.0f, 49.0f,
+        52.0f, 55.0f, 58.0f,
+        61.0f, 64.0f, 67.0f,
+        70.0f, 74.0f, 78.0f,
+        82.0f, 86.0f,
+        90.0f, 94.0f, 98.0f,
+        102.0f, 106.0f,
         110.0f, 115.0f
     };
 
@@ -37,11 +37,11 @@ public class ItemGenerate : MonoBehaviour
 
     //生成するアイテムの個数を指定
         //そうめん
-        private int somenNum = 24;
+        private int somenNum = 29;
         //赤いそうめん
-        private int redsomenNum = 10;
+        private int redsomenNum = 14;
         //スイカ
-        private int wmNum = 4;
+        private int wmNum = 5;
 
     //配列の要素番号を管理
     private int itemNum;
