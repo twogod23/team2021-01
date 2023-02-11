@@ -96,11 +96,16 @@ public class OtetsukiCounter : MonoBehaviour
         //お手つき判定
         if (clickCounter > getCounter)
         {
-            Debug.Log("お手つき");
-            otetsukiMessage.SetActive(true);
-            otetsuki = true;
+            //クリックした回数を補正
             clickCounter = getCounter;
-            otetsukiTime = Timer.GetTime();
+            //一度でもアイテムを取ったことがある際にお手つきを適用
+            if (getCounter > 0)
+            {
+                Debug.Log("お手つき");
+                otetsukiMessage.SetActive(true);
+                otetsuki = true;
+                otetsukiTime = Timer.GetTime();
+            }
         }
     }
 }
