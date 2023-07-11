@@ -19,8 +19,7 @@ public class ItemMove : MonoBehaviour
 
     }
 
-    // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         //時間の取得および計算
         time = Timer.GetLimitTime() - Timer.GetTime();
