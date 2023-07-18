@@ -109,7 +109,7 @@ MonoBehaviour:
   redSomen: {fileID: 3755376773859678425}
   redSomenBefore: {fileID: 3796313857532614056}
   redSomenAfter: {fileID: 1997399832311484084}
-  moveUp: 0.08
+  moveUp: 3.8
 --- !u!1001 &2013663171935166619
 PrefabInstance:
   m_ObjectHideFlags: 0

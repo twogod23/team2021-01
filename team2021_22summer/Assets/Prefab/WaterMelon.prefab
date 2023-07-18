@@ -88,8 +88,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   watermelon: {fileID: 5894794949191498305}
-  moveUp: 50
-  startMoveUp: 200
+  moveUp: 200
+  startMoveUp: 800
 --- !u!1001 &5894794949995968237
 PrefabInstance:
   m_ObjectHideFlags: 0

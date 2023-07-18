@@ -47,7 +47,7 @@ public class RedSomenGet : MonoBehaviour, IPointerClickHandler
         if (redSomenAfter.activeSelf == true)
         {
             //そうめんを上に動かす
-            redSomen.transform.Translate(Vector3.up * moveUp);
+            redSomen.transform.Translate(Vector3.up * moveUp * Time.deltaTime);
             if (redSomenAnime.isPlaying == false)
             {
                 //腕の画像を管理するスクリプトに情報を送信

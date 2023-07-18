@@ -46,7 +46,7 @@ public class SomenGet : MonoBehaviour, IPointerClickHandler
         if (somenAfter.activeSelf == true)
         {
             //そうめんを上に動かす
-            somen.transform.Translate(Vector3.up * moveUp);
+            somen.transform.Translate(Vector3.up * moveUp * Time.deltaTime);
             if (somenAnime.isPlaying == false)
             {
                 //腕の画像を管理するスクリプトに情報を送信

@@ -43,7 +43,7 @@ public class WaterMelonGet : MonoBehaviour, IPointerClickHandler
         if (gotItem == true)
         {
             //力をかけてすいかを上に持ち上げる
-            rbItem.AddForce(Vector3.up * moveUp);
+            rbItem.AddForce(Vector3.up * moveUp * Time.deltaTime);
             //一定時間後にアイテムを削除
             float time = afterGetTime - Timer.GetTime();
             if (time > 2.0f)

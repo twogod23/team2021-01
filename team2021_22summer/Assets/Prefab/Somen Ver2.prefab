@@ -96,7 +96,7 @@ MonoBehaviour:
   somen: {fileID: 3396459676647217342}
   somenBefore: {fileID: 3812390798635893350}
   somenAfter: {fileID: 7106494398361786737}
-  moveUp: 0.08
+  moveUp: 3.8
 --- !u!114 &3396459676647217341
 MonoBehaviour:
   m_ObjectHideFlags: 0

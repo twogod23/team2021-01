@@ -26,7 +26,7 @@ public class ItemMove : MonoBehaviour
         time = Timer.GetLimitTime() - Timer.GetTime();
 
         //経過時間によって流れる速さを変更
-        speed = 0.1f + (time * 0.001f);
+        speed = 0.1f + (time * 0.0015f);
 
         //ポーズメニューの存在の可否でオブジェクトの流れを制御
         pauseMenu = GameObject.Find(pauseMenuPrefab.name);
